@@ -29,7 +29,7 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port, () => console.log("Listening on port 3001!"));
+server.listen((process.env.PORT || '3001'), () => console.log("Listening on port 3001!"));
 server.on('error', onError);
 server.on('listening', onListening);
 
