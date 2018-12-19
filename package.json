@@ -1,6 +1,11 @@
 {
   "name": "wekacreative",
   "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "npm": "6.4.1",
+    "node": "8.11.3"
+  },
   "main": "src/server/index.js",
   "scripts": {
     "build": "webpack --mode production",
