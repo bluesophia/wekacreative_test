@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.874 29.874">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #f77b39;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2422" data-name="Rectangle 2422" class="cls-1" width="29.874" height="29.874" transform="translate(0)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_83" data-name="Mask Group 83" class="cls-2" transform="translate(0 0)">
+    <g id="_ionicons_svg_ios-information-circle-outline" transform="translate(0 0)">
+      <path id="Path_3471" data-name="Path 3471" class="cls-3" d="M21.821,15.547a1.48,1.48,0,1,1,1.472,1.436,1.438,1.438,0,0,1-1.472-1.436Zm.1,2.564h2.743V28.458H21.921Z" transform="translate(-8.363 -6.628)"/>
+      <path id="Path_3472" data-name="Path 3472" class="cls-3" d="M19.386,6.46a12.921,12.921,0,1,1-9.142,3.784A12.841,12.841,0,0,1,19.386,6.46m0-2.011A14.937,14.937,0,1,0,34.323,19.386,14.935,14.935,0,0,0,19.386,4.449Z" transform="translate(-4.449 -4.449)"/>
+    </g>
+  </g>
+</svg>

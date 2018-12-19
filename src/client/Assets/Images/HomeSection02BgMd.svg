@@ -1,0 +1,49 @@
+<svg id="Group_2103" data-name="Group 2103" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 768 724.909">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        opacity: 0.326;
+      }
+
+      .cls-4 {
+        fill: #98d1aa;
+        opacity: 0.433;
+      }
+
+      .cls-5 {
+        opacity: 0.26;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2246" data-name="Rectangle 2246" class="cls-1" width="768" height="724.909"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#53ffa9"/>
+      <stop offset="0" stop-color="#f3ca7c"/>
+      <stop offset="1" stop-color="#1faf4c"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_63" data-name="Mask Group 63" class="cls-2">
+    <g id="Group_1625" data-name="Group 1625" transform="translate(-1659.934 4.308)">
+      <g id="Group_1624" data-name="Group 1624" class="cls-3" transform="translate(2427.901 830.741) rotate(180)">
+        <path id="Path_3036" data-name="Path 3036" class="cls-4" d="M775.651,762.011s-78.776-18.067-183.066,0c-66.6,11.537-131.545,74.346-209.459,68.324C297.222,823.7,231.5,757.646,166.86,746.3,81.7,731.348,0,762.011,0,762.011V49.293s30.1,17.806,134.188,0S285.318-3.407,414.571.269,575.738,33.156,651.2,64,777.845,81.474,777.845,81.474Z" transform="translate(0 0)"/>
+      </g>
+      <g id="Group_1706" data-name="Group 1706" class="cls-5" transform="translate(777.845 842.174) rotate(180)">
+        <path id="Path_3036-2" data-name="Path 3036" class="cls-6" d="M775.651,762.011s-78.776-18.067-183.066,0c-66.6,11.537-131.545,74.346-209.459,68.324C297.222,823.7,231.5,757.646,166.86,746.3,81.7,731.348,0,762.011,0,762.011V49.293s30.1,17.806,134.188,0S285.318-3.407,414.571.269,575.738,33.156,651.2,64,777.845,81.474,777.845,81.474Z" transform="translate(0 0)"/>
+      </g>
+    </g>
+  </g>
+</svg>

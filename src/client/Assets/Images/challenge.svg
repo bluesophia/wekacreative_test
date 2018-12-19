@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184 184">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #f47b3b;
+        stroke-width: 4px;
+      }
+
+      .cls-1 {
+        stroke-dasharray: 6;
+      }
+
+      .cls-2 {
+        fill: #f47b3b;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: rgba(181,99,99,0);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="challenge" transform="translate(-95 -914)">
+    <g id="Ellipse_464" data-name="Ellipse 464" class="cls-1" transform="translate(95 914)">
+      <circle class="cls-4" cx="92" cy="92" r="92"/>
+      <circle class="cls-5" cx="92" cy="92" r="90"/>
+    </g>
+    <g id="Group_1928" data-name="Group 1928" transform="translate(145 962)">
+      <path id="Path_3435" data-name="Path 3435" class="cls-2" d="M1,65.91,21.766,43.87,36.672,59.54,68.9,28.2,83.428,41.322V79.16H1Z" transform="translate(0 7.453)"/>
+      <path id="Path_3436" data-name="Path 3436" class="cls-3" d="M59.648,19.855,38.5,1H59.648V35.653" transform="translate(10.275)"/>
+    </g>
+  </g>
+</svg>
