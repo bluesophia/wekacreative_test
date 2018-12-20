@@ -17,19 +17,12 @@ var img = require('../img/logo_color.png');
 //setting transport
 
 let transport = {
-  service:"Gmail",
   host: 'smtp.gmail.com',
   port: 465,
   secure: false,
   auth: {
-    XOauth2: {
-      user: smtpConfig.user,
-      clientId: smtpConfig.client_id,
-      clientSecret: smtpConfig.client_secret,
-      refreshToken: smtpConfig.refresh_token,
-      accessToken: smtpConfig.access_token,
-      timeout: smtpConfig.access_timeout - Date.now()
-    }
+    user: creds.USER,
+    pass: creds.PASS
   },
   tls: {
     rejectUnauthorized:false
