@@ -34,8 +34,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'build')));
-app.use('/', express.static('build'));
+app.use(express.static(path.join(__dirname, 'dist')));
+app.use('/', express.static('dist'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -50,7 +50,7 @@ app.use('/api', index);
 // app.use('/send', send);
 // app.use('/sendsupport', sendsupport);
 app.get('*', (req, res) => {
-  res.sendFile('build/index.html', { root: global });
+  res.sendFile('dist/index.html', { root: global });
 });
 
 
