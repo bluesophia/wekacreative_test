@@ -14,7 +14,7 @@ var inLineCss = require('nodemailer-juice');
 //setting transport
 let transport = {
   host: 'smtp.gmail.com',
-  port: 587,
+  port: 465,
   secure: false,
   auth: {
     user: creds.USER,

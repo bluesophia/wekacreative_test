@@ -18,7 +18,7 @@ var img = require('../img/logo_color.png');
 
 let transport = {
   host: 'smtp.gmail.com',
-  port: 587,
+  port: 465,
   secure: false,
   auth: {
     user: creds.USER,
