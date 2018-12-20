@@ -64,6 +64,7 @@ class ContactusContainer extends Component {
     axios({
       method: "POST",
       url:"/api/contact/post",
+      dataType: "json",
       data: {
         name: name,
         email: email,

@@ -50,14 +50,13 @@ router.get('/', (req, res, next)=> {
 })
 //router post
 router.post('/post', (req, res, next) => {
-  let logo = req.body.logo
   let name = req.body.name
   let email = req.body.email
   let phone = req.body.phone
   let message = req.body.message
   // let image = img
   //html contents
-  let content = `name: ${name} \n email: ${email} \n message: ${message}`
+  // let content = `name: ${name} \n email: ${email} \n message: ${message}`
   let html = `<style>
 
         body{
