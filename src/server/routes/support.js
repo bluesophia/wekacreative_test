@@ -3,9 +3,9 @@ var router = express.Router();
 
 
 // define the home page route
-router.get('/', function (req, res) {
-    res.send('support');
-})
+// router.get('/', function (req, res) {
+//     res.send('support');
+// })
 
 var nodemailer = require('nodemailer');
 const creds = require('../config/config');
