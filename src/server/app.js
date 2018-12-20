@@ -18,11 +18,6 @@ const index = require('./routes/index');
 const app = express();
 var cors = require('express-cors');
 
-// serverside rendering
-import React from "react";
-import{ renderToString } from "react-dom/server";
-import Routes from "../client/routes.js"
-
 app.get( "/*", ( req, res ) => {
   const jsx = ( <Routes /> );
   const reactDom = renderToString( jsx );
