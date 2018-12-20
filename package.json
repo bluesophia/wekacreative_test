@@ -2,7 +2,11 @@
   "name": "wekacreative",
   "version": "1.0.0",
   "private": true,
-  "main": "node src/server/index.js",
+  "main": "src/server/index.js",
+  "engines": {
+    "npm": "6.5.0",
+    "node": "8.11.3"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack --mode production && node src/server/index.js",
