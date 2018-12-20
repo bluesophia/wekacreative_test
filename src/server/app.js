@@ -18,13 +18,13 @@ const index = require('./routes/index');
 const app = express();
 var cors = require('express-cors');
 
-app.get( "/*", ( req, res ) => {
-  const jsx = ( <Routes /> );
-  const reactDom = renderToString( jsx );
+// app.get( "/*", ( req, res ) => {
+//   const jsx = ( <Routes /> );
+//   const reactDom = renderToString( jsx );
 
-  res.writeHead( 200, { "Content-Type": "text/html" } );
-  res.end( htmlTemplate( reactDom ) );
-} );
+//   res.writeHead( 200, { "Content-Type": "text/html" } );
+//   res.end( htmlTemplate( reactDom ) );
+// } );
 
 
 // uncomment after placing your favicon in /public
