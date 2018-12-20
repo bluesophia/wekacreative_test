@@ -17,6 +17,7 @@ var img = require('../img/logo_color.png');
 //setting transport
 
 let transport = {
+  service:"Gmail",
   host: 'smtp.gmail.com',
   port: 465,
   secure: false,
