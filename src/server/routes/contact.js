@@ -21,8 +21,14 @@ let transport = {
   port: 465,
   secure: false,
   auth: {
-    user: creds.USER,
-    pass: creds.PASS
+    XOauth2: {
+      user: smtpConfig.user,
+      clientId: smtpConfig.client_id,
+      clientSecret: smtpConfig.client_secret,
+      refreshToken: smtpConfig.refresh_token,
+      accessToken: smtpConfig.access_token,
+      timeout: smtpConfig.access_timeout - Date.now()
+    }
   },
   tls: {
     rejectUnauthorized:false
