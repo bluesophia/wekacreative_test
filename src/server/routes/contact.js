@@ -1,28 +1,52 @@
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-// var EmailTemplate = require('email-templates').EmailTemplate;
-// var emailtemplate = require('../views/emailtemplate.ejs');
+const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
+const { OAuth2Client } = require('google-auth-library');
 const creds = require('../config/config');
 var inLineCss = require('nodemailer-juice');
-var fs = require('fs');
-var Module = require('module');
-Module._extensions['.png'] = function(module, fn) {
-  var base64 = fs.readFileSync(fn).toString('base64');
-  module._compile('module.exports="data:image/png;base64,' + base64 + '"', fn);
-};
-const path = require('path');
-var img = require('../img/logo_color.png');
-//contact us page
-//setting transport
 
+
+//google auth setting 
+const oauth2Client = new OAuth2(
+  // client Id
+  "872797583396-c2evj9vditvq5mob4ng9d2oq4v7fj60t.apps.googleusercontent.com",
+  // secret 
+  "75DLFVI05tcGSrvrQuPGnjgB",
+  // redirect URL
+  "https://developers.google.com/oauthplayground"
+);
+
+// refresh token for auth
+oauth2Client.setCredentials({
+  refresh_token: "ya29.Glt5BgJH9isr6OYNvF7p6QA141ZENQ3QKHbhJ5y8YUrEGcUoS1JsiHSMHnNyXz8HKQLhip-LIwzBCAsRTUI4jZMdmjNTgF6Hq9EWEf7QRHTpAGtqpisnA44RMaUL"
+});
+
+// object
+async function asynctokens() {
+  const tokens = await oauth2Client.refreshAccessToken();
+  console.log('tokens', tokens);
+  return tokens;
+}
+asynctokens();
+// const tokens = await oauth2Client.refreshAccessToken()    
+const accessToken = tokens.credentials.access_token;
+
+//setting transport
 let transport = {
+  service: "gmail",
   host: 'smtp.gmail.com',
   port: 465,
-  secure: false,
+  secure: true,
   auth: {
+    type: "OAuth2",
     user: creds.USER,
-    pass: creds.PASS
+    // pass: creds.PASS,
+    clientId: "872797583396-c2evj9vditvq5mob4ng9d2oq4v7fj60t.apps.googleusercontent.com",
+    clientSecret: "75DLFVI05tcGSrvrQuPGnjgB",
+    refreshToken: "1/T_tVyAc9LPEgSZHtf3C2J4KDOD6TrZGrpr-yjMW-S9WZ2d0Y4NTkxcLfzSKt4596",
+    accessToken: accessToken
   },
   tls: {
     rejectUnauthorized:false
@@ -40,9 +64,7 @@ transporter.verify((error, success)=> {
   } else {
     console.log('Server is ready to take messages');
   }
-})
-
-;
+});
 
 //router get 
 router.get('/', (req, res, next)=> {
@@ -168,11 +190,6 @@ let mail = {
   from: name,
   to: 'imsophia0313@gmail.com',
   subject: 'New message from contact form',
-  // attachments: [{
-  //   filename: 'logo_color.png',
-  //   path: __dirname +'/img/logo_color.png',
-  //   cid: 'logo'
-  // }] ,
   html: html
 }
 
@@ -189,5 +206,6 @@ transporter.sendMail(mail, (err, data)=> {
   }
 })
 })
+
 
 module.exports= router;
